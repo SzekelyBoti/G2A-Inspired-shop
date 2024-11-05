@@ -1,0 +1,549 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+
+#gameContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card {
+  position: relative;
+  box-shadow: 5px 5px 8px #333;
+  margin-bottom: 35px;
+  margin-right: 25px;
+  margin-left: 25px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  min-height: 570px;
+}
+
+.card:hover {
+  transform: scale(1.07);
+}
+
+.gameName {
+  margin-top: 5px;
+  margin-left: 10px;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+  width: 220px;
+  font-weight: 800;
+}
+
+.gameGenre {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.gameImage {
+  width: 250px;
+  height: 400px;
+}
+
+.container1 {
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+}
+
+.gamePrice {
+  margin-left: 10px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.gameQuantity {
+  font-size: 14px;
+  text-align: center;
+}
+
+.gameCart {
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 208px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: rgb(0, 53, 0);
+  padding: 3px;
+  color: green;
+  transition: transform 0.3s ease;
+}
+
+.gameCart:hover {
+  cursor: pointer;
+}
+.red {
+  color: red;
+}
+
+.green {
+  color: #9aff00;
+}
+
+.logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+  margin-left: 15px;
+}
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+#navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkgray;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px #555;
+  z-index: 1;
+}
+
+#login,
+#logout,
+#createNew {
+  margin-right: 10px;
+  margin-left: auto;
+  font-size: 20px;
+  border: 2px solid;
+  border-radius: 2px;
+  background-color: #cecece;
+  padding: 4px;
+  font-weight: 800;
+}
+
+#login:hover,
+#logout:hover,
+#createNew:hover {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+#createNew {
+  display: none;
+}
+
+#shopCart {
+  background-color: #333;
+  font-size: 26px;
+  margin-left: 20px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+#shopCart:hover {
+  background-color: #5a5a5a;
+}
+
+#loginDiv {
+  box-shadow: 5px 5px 8px #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+  max-width: 400px;
+  margin: 15% auto;
+  min-height: 250px;
+}
+
+#pwText {
+  height: 50px;
+  background-color: lightgray;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#loginButton {
+  height: 35px;
+  width: 75px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#loginButton:hover {
+  cursor: pointer;
+  background-color: rgb(226, 226, 226);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card.big-scale {
+  transform: scale(1.07);
+}
+
+#expandedCard {
+  display: none;
+  box-shadow: 5px 5px 4px #333;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62%;
+  height: 70%;
+  background-color: rgb(255, 254, 254);
+  z-index: 10;
+}
+
+.bigImage {
+  max-width: 40%;
+  max-height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.bigName,
+.bigGenre,
+.bigPrice,
+.bigQuantity,
+.bigRelease,
+.bigDescription,
+.bigDeveloper,
+.adminDelete,
+.adminEdit,
+.escapeDiv,
+.addToCart {
+  position: absolute;
+}
+
+.bigName {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 8px #b3b3b3;
+  padding: 8px;
+  margin-right: 5%;
+  top: 5%;
+  left: 50%;
+  font-size: 28px;
+}
+
+.bigGenre {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 8px #b3b3b3;
+  padding: 8px;
+  margin-right: 5%;
+  top: 20%;
+  left: 50%;
+  font-size: 20px;
+}
+
+.bigPrice {
+  bottom: 15%;
+  left: 50%;
+  font-size: 24px;
+}
+
+.bigQuantity {
+  bottom: 15%;
+  left: 58%;
+  font-size: 24px;
+}
+
+.bigRelease {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 8px #b3b3b3;
+  padding: 8px;
+  margin-right: 5%;
+  top: 30%;
+  left: 50%;
+  font-size: 20px;
+}
+
+.bigDescription {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 8px #b3b3b3;
+  padding: 8px;
+  margin-right: 5%;
+  margin-right: 5%;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+}
+
+.bigDeveloper {
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 8px #b3b3b3;
+  padding: 8px;
+  margin-right: 5%;
+
+  top: 40%;
+  left: 50%;
+  font-size: 20px;
+}
+
+.adminDelete {
+  bottom: 7%;
+  left: 60%;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.adminDelete:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+}
+
+.adminEdit {
+  bottom: 7%;
+  left: 70%;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+.adminEdit:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+}
+
+.escapeDiv {
+  text-align: center;
+  color: #6f6f6f;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 1px;
+  margin-left: 96.5%;
+  transition: transform 0.3s ease;
+}
+.escapeDiv:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.addToCart {
+  color: white;
+  background-color: #0086fb;
+  box-shadow: 5px 5px 8px #4d4c4c;
+  padding: 10px;
+  margin-right: 5%;
+  bottom: 13.7%;
+  left: 81%;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.addToCart:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #2c9dff;
+}
+.addToCart:hover {
+  cursor: pointer;
+}
+
+#shopElement {
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  border-radius: 30px;
+  padding: 5px;
+  right: 5px;
+  top: 40px;
+}
+
+.notif {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 55px;
+  background-color: darkgray;
+  box-shadow: 0px 5px 5px #555;
+  padding: 5px;
+  z-index: 11;
+  color: white;
+  font-weight: 300;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.cartItem img {
+  max-width: 150px;
+  max-height: 400px;
+  margin-right: 20px;
+}
+
+.cartItem .gameInfo {
+  flex-grow: 1;
+}
+
+.cartItem .quantity {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.deleteIcon {
+  font-size: 24px;
+  margin-left: 30px;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+}
+
+.totalPrice {
+  margin-top: 10px;
+  font-size: 24px;
+  padding: 5px;
+  font-weight: 800;
+}
+
+.checkoutButton {
+  margin-top: 15px;
+  box-shadow: 3px 3px 8px #555;
+  margin-bottom: 30px;
+  font-size: 24px;
+  border: 3px solid;
+  background-color: #0086fb;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+
+.checkoutButton:hover {
+  cursor: pointer;
+  background-color: #60b5ff;
+}
+
+#cartGameName {
+  margin-right: 15px;
+  overflow-wrap: break-word;
+  max-width: 25%;
+}
+#expandedCard form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+}
+#expandedCard form input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+#expandedCard form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#expandedCard form button:hover {
+  transform: scale(1.12);
+  background-color: #56a8ff;
+}
+
+.thank {
+  color: #9aff00;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.keyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 25px;
+  margin-left: 150px;
+  margin-right: 150px;
+  max-height: 350px;
+}
+
+.keyItem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#keyImg {
+  max-width: 200px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.keysList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-out;
+}
+
+.keysList.visible {
+  max-height: 1000px;
+}
+
+#editButton:hover {
+  cursor: pointer;
+  color: red;
+  background-color: #c0c0c0;
+}
+
+#editButton {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.showKeys {
+  font-size: 24px;
+  background-color: #007bff;
+  border: 2px solid;
+  border-radius: 5px;
+  transition: background-color 1s ease, transform 0.5s ease;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.showKeys:hover {
+  background-color: #3c9aff;
+  transform: scale(1.08);
+}
