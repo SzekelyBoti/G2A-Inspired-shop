@@ -2,9 +2,9 @@
 
 # Overview
 
-  The G2A Inspired Shop is an online marketplace inspired by G2A, featuring a curated collection of games. 
-  This project includes both frontend and backend components, with data efficiently managed in a JSON file. 
-  It supports comprehensive CRUD operations and performs accurate checkout calculations.
+  The G2A Inspired Shop is an online marketplace project I developed while at Codecool, inspired by the popular gaming platform G2A. 
+  This project features a curated collection of games and includes both frontend and backend components, with data efficiently managed in a JSON file. 
+  It supports comprehensive CRUD operations and handles accurate checkout calculations.
 
 # Features
 
