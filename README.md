@@ -64,7 +64,7 @@ Docker Hub: https://hub.docker.com/r/boti95/g2ainspiredshop
 
 ## Contact 📞
 
-Szekely Botond  [![LinkedIn][linkedin-shield]][linkedin-url]  [![Email][email-shield]](mailto:your_email@example.com)  
+Szekely Botond  [![LinkedIn][linkedin-shield]][linkedin-url]  [![Email][email-shield]](mailto:szekelyboti1@gmail.com)  
 Project Link: [![Project Link][project-link-shield]](https://github.com/boti95/G2A-Inspired-shop)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,6 +79,6 @@ Project Link: [![Project Link][project-link-shield]](https://github.com/boti95/G
 [JSON-shield]: https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white
 [JSON-url]: https://www.json.org/
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white
-[linkedin-url]: https://www.linkedin.com/in/your_linkedin
+[linkedin-url]: https://www.linkedin.com/in/boti-szekely
 [email-shield]: https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white
 [project-link-shield]: https://img.shields.io/badge/Project%20Link-000000?style=for-the-badge&logo=github&logoColor=white
